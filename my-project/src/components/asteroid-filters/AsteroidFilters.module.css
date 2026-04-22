@@ -1,0 +1,16 @@
+.distanceLabel {
+    max-width: 50%;
+    font-size: 14px;
+    color: #666;
+}
+
+.selected {
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
