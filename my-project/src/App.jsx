@@ -1,16 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import NewComponent from './NewComponent'
+import { AsteroidsPage } from './pages/AsteroidsPage'
+import { DestroymentPage } from './pages/DestroymentPage'
+import { AsteroidPage } from './pages/AsteroidPage'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div> Lorem ipsum dolor sit amet.</div>
-      <div> Lorem ipsum dolor sit amet.</div>
-      <NewComponent name = {123} count = {"dsadsadsa"}/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AsteroidsPage />} />
+        <Route path="/destroyment" element={<DestroymentPage />} />
+        <Route path="asteroids/:id" element={<AsteroidPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

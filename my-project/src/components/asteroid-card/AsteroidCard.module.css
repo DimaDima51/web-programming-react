@@ -1,0 +1,23 @@
+.container {
+    width: 1280px;
+    height: 200px;
+    background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: black;
+}
+
+.containerDanger {
+    width: 1280px;
+    height: 200px;
+    background: linear-gradient(90deg, #ffb199 0%, #FF0844 100%);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: black;
+}
