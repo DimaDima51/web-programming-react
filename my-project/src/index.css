@@ -24,13 +24,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1 {

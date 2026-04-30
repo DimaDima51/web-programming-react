@@ -5,6 +5,25 @@
     padding: 20px 0;
 }
 
+.summaryCard {
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.summaryTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
 .title {
     font-size: 28px;
     font-weight: bold;

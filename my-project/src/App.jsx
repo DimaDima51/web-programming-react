@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AsteroidsPage />} />
           <Route path="/destroyment" element={<DestroymentPage />} />
-          <Route path="asteroids/:id" element={<AsteroidPage />} />
+          <Route path="/asteroids/:id" element={<AsteroidPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
