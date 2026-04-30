@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    gap: 20px;
+}
+
+.dino {
+    flex-shrink: 0;
+    width: 100px;
+    height: 50px;
+    background: url(./dino.png) no-repeat center / contain;
+    align-self: flex-end;
+    margin-bottom: 0px;
+}
+
+.info {
+    flex: 0 1 450px;
+    min-width: 200px;
+    font-size: 24px;
+    color: black;
+}
+
+.name {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.small {
+    background-image: url(./asteroid-small.png);
+    background-position: calc(100% - 625px) -20px;
+}
+
+.medium {
+    background-image: url(./asteroid-medium.png);
+    background-position: calc(100% - 575px) -20px;
+}
+
+.big {
+    background-image: url(./asteroid-big.png);
+    background-position: calc(100% - 350px) -20px;
+}
