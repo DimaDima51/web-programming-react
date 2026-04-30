@@ -1,16 +1,27 @@
-import { useState } from 'react'
 import './App.css'
-import NewComponent from './NewComponent'
+import { AsteroidsPage } from './pages/AsteroidsPage'
+import { DestroymentPage } from './pages/DestroymentPage'
+import { AsteroidPage } from './pages/AsteroidPage'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { createContext, useState } from 'react';
+
+export const AppContext = createContext(null);
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [asteroids, setAsteroids] = useState([]);
+  const [destroyList, setDestroyList] = useState([]);
 
   return (
-    <>
-      <div> Lorem ipsum dolor sit amet.</div>
-      <div> Lorem ipsum dolor sit amet.</div>
-      <NewComponent name = {123} count = {"dsadsadsa"}/>
-    </>
+    <AppContext.Provider value={{ asteroids, setAsteroids, destroyList, setDestroyList }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AsteroidsPage />} />
+          <Route path="/destroyment" element={<DestroymentPage />} />
+          <Route path="asteroids/:id" element={<AsteroidPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
